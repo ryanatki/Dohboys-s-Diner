@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dohboy&#x27;s Diner</title><meta name="description" content="All-day breakfast, lunch and a drive-thru at 429 Glendale Ave in St. Catharines.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700&display=swap">
+<style>:root{color-scheme:light;/* layout: retro diner: condensed caps, cream/black/cherry, checkerboard dividers, vinyl record behind hero photo */--radius:2px;--h-weight:400;--h-track:.01em;--h-case:uppercase;--em-style:normal;--quote-style:normal;--h1-max:104px;--h2-max:60px;--brand-size:24px;--hero-ratio:1/1;--h2-rule-content:none;--div-h:18px;--div-bg:conic-gradient(#141414 25%,#FBF6EC 0 50%,#141414 0 75%,#FBF6EC 0) 0 0/18px 18px;--div-border:0;--bg:#FBF6EC;--surface:#FFFFFF;--ink:#141414;--muted:#5A564E;--line:#DDD4C2;--accent:#D62828;--accent-hover:#B51F1F;--on-accent:#FFFFFF;--accent-text:#C21F1F;--em-color:#D62828;--hero-bg:#FBF6EC;--hero-ink:#141414;--hero-muted:#4A463F;--hero-accent:#C21F1F;--hero-line:#DDD4C2;--band-bg:#141414;--band-ink:#FBF6EC;--band-accent:#FF5A4D;--band-line:#3A3A3A;--ph-a:#F1E9D9;--ph-b:#EBE2CF;--today-bg:#FBE9E6;--display:'Anton','Arial Narrow',Impact,sans-serif;--body:'Barlow','Helvetica Neue',Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:76px}
+@media (min-width:860px){body{padding-bottom:0}}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent-text);outline-offset:3px}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+@media (min-width:700px){.wrap{padding:0 32px}}
+h1,h2,h3{font-family:var(--display);font-weight:var(--h-weight);letter-spacing:var(--h-track);text-transform:var(--h-case);margin:0;text-wrap:balance;line-height:1.05}
+h1 em,h2 em{font-style:var(--em-style);color:var(--em-color)}
+p{margin:0}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-text)}
+.concept{background:var(--ink);color:var(--bg);font-size:12.5px;text-align:center;padding:8px 16px;letter-spacing:.02em}
+header.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{font-family:var(--display);font-weight:var(--h-weight);text-transform:var(--h-case);letter-spacing:var(--h-track);font-size:var(--brand-size);text-decoration:none;line-height:1.1}
+.brand small{display:block;font-family:var(--body);font-size:10.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--accent-text);margin-top:3px}
+nav.main{display:none;gap:26px;font-size:14.5px;font-weight:500}
+nav.main a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+nav.main a:hover{border-color:var(--accent)}
+.btn.hdr-call{display:none}
+@media (min-width:860px){nav.main{display:flex}.btn.hdr-call{display:inline-flex}details.mnav{display:none}}
+details.mnav{position:relative}
+details.mnav summary{list-style:none;cursor:pointer;border:1px solid var(--ink);padding:9px 14px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;border-radius:var(--radius)}
+details.mnav summary::-webkit-details-marker{display:none}
+details.mnav .sheet{position:absolute;right:0;top:calc(100% + 10px);background:var(--surface);border:1px solid var(--line);box-shadow:0 18px 40px -18px rgba(0,0,0,.35);min-width:230px;display:flex;flex-direction:column;padding:8px;border-radius:var(--radius)}
+details.mnav .sheet a{text-decoration:none;padding:13px 14px;font-weight:500;border-bottom:1px solid var(--line)}
+details.mnav .sheet a:last-child{border-bottom:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:600;font-size:14px;letter-spacing:.08em;text-transform:uppercase;padding:15px 24px;border-radius:var(--radius);border:1.5px solid transparent;transition:background .15s,color .15s,border-color .15s;text-align:center}
+.btn.solid{background:var(--accent);color:var(--on-accent)}
+.btn.solid:hover{background:var(--accent-hover)}
+.btn.line{border-color:currentColor}
+.btn.line:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.hero{background:var(--hero-bg);color:var(--hero-ink);overflow:hidden}
+.hero .wrap{display:grid;gap:40px;padding-top:52px;padding-bottom:56px;align-items:center}
+@media (min-width:860px){.hero .wrap{grid-template-columns:1.05fr .95fr;gap:64px;padding-top:80px;padding-bottom:84px}}
+.hero .eyebrow{color:var(--hero-accent)}
+.hero h1{font-size:clamp(46px,8.4vw,var(--h1-max));margin-top:18px}
+.hero h1 em{color:var(--hero-accent)}
+.hero .lede{font-size:19px;max-width:520px;margin-top:22px;color:var(--hero-muted)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .btn.line:hover{background:var(--hero-ink);color:var(--hero-bg);border-color:var(--hero-ink)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:30px;padding-top:20px;border-top:1px solid var(--hero-line);font-size:14.5px;color:var(--hero-muted)}
+.status{display:inline-flex;align-items:center;gap:9px;font-weight:600;color:var(--hero-ink)}
+.dot{width:9px;height:9px;border-radius:50%;background:#9a9a9a;flex:none}
+.dot.open{background:#2E9E5B}
+.dot.closed{background:#C4473A}
+.ph{background:repeating-linear-gradient(135deg,var(--ph-a) 0 12px,var(--ph-b) 12px 24px);border:1px solid var(--line);color:var(--muted);display:flex;align-items:center;justify-content:center;text-align:center;font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:18px;border-radius:var(--radius)}
+.hero-art{position:relative}
+.hero-art .ph{aspect-ratio:var(--hero-ratio);width:100%;position:relative;z-index:1}
+section.blk{padding:68px 0}
+@media (min-width:860px){section.blk{padding:96px 0}}
+section.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.sec-head{max-width:640px;margin-bottom:38px}
+.sec-head h2{font-size:clamp(34px,5vw,var(--h2-max));margin-top:12px}
+.sec-head h2::after{content:var(--h2-rule-content);display:block;width:64px;height:5px;background:var(--accent);margin-top:14px}
+.sec-head p{margin-top:14px;color:var(--muted)}
+.facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
+.facts .wrap{display:grid;grid-template-columns:repeat(2,1fr)}
+@media (min-width:760px){.facts .wrap{grid-template-columns:repeat(4,1fr)}}
+.facts div{padding:18px 8px;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-align:center}
+.menu{display:grid;gap:44px}
+@media (min-width:860px){.menu{grid-template-columns:1fr 1fr;gap:48px 72px}}
+.menu h3{font-size:26px;padding-bottom:12px;border-bottom:2px solid var(--ink);margin-bottom:6px}
+.item{padding:13px 0;border-bottom:1px solid var(--line)}
+.item .row{display:flex;align-items:baseline;gap:10px}
+.item .name{font-weight:600}
+.item .lead{flex:1;border-bottom:1.5px dotted var(--muted);opacity:.5;transform:translateY(-4px);min-width:16px}
+.item .price{font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--accent-text);white-space:nowrap}
+.item .desc{font-size:14.5px;color:var(--muted);margin-top:2px}
+.note{font-size:14px;color:var(--muted);margin-top:28px}
+.cards{display:grid;gap:16px}
+@media (min-width:640px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:960px){.cards.c3{grid-template-columns:repeat(3,1fr)}.cards.c4{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--surface);border:1px solid var(--line);padding:26px 24px;border-radius:var(--radius)}
+section.alt .card{background:var(--bg)}
+.card .num{font-family:var(--display);font-size:30px;color:var(--accent-text);line-height:1;margin-bottom:14px;font-weight:var(--h-weight)}
+.card h3{font-size:23px;margin-bottom:8px}
+.card p{font-size:15.5px;color:var(--muted)}
+.band{background:var(--band-bg);color:var(--band-ink)}
+.band .wrap{display:grid;gap:30px;padding-top:64px;padding-bottom:64px;align-items:center}
+@media (min-width:860px){.band .wrap{grid-template-columns:1.1fr .9fr;gap:64px;padding-top:88px;padding-bottom:88px}}
+.band .eyebrow{color:var(--band-accent)}
+.band h2{font-size:clamp(36px,5.4vw,var(--h2-max));margin-top:12px}
+.band h2 em{color:var(--band-accent)}
+.band p{margin-top:16px;max-width:520px;opacity:.88}
+.band ul{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.band li{padding:14px 0;border-bottom:1px solid var(--band-line);font-weight:500}
+.band li:first-child{border-top:1px solid var(--band-line)}
+.band .btn{margin-top:26px}
+.band .btn.line:hover{background:var(--band-ink);color:var(--band-bg);border-color:var(--band-ink)}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media (min-width:760px){.gallery{grid-template-columns:repeat(3,1fr);gap:16px}}
+.gallery .ph{aspect-ratio:4/5}
+.rating{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:var(--surface);padding:10px 16px;font-size:14.5px;font-weight:600;border-radius:var(--radius);margin-bottom:26px}
+.rating b{font-family:var(--display);font-size:24px;font-weight:var(--h-weight);line-height:1}
+.quote{font-family:var(--display);font-size:20px;line-height:1.35;color:var(--muted);text-transform:none;letter-spacing:0;font-style:var(--quote-style)}
+.card .by{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.visit{display:grid;gap:20px}
+@media (min-width:860px){.visit{grid-template-columns:1fr 1fr;gap:28px}}
+.panel{background:var(--surface);border:1px solid var(--line);padding:28px 24px;border-radius:var(--radius)}
+section.alt .panel{background:var(--bg)}
+.panel h3{font-size:26px;margin-bottom:14px}
+table.hours{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+table.hours th,table.hours td{padding:12px 10px;border-bottom:1px solid var(--line);text-align:left;font-weight:400}
+table.hours td{text-align:right}
+table.hours tr:last-child th,table.hours tr:last-child td{border-bottom:0}
+table.hours tr.today{background:var(--today-bg)}
+table.hours tr.today th,table.hours tr.today td{font-weight:700}
+table.hours tr.today th::after{content:"Today";margin-left:10px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-text)}
+address{font-style:normal;font-size:19px;line-height:1.5}
+.panel .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.panel .ph{min-height:130px;margin-top:20px}
+.phone-big{font-family:var(--display);font-weight:var(--h-weight);font-size:30px;margin-top:14px;display:block;text-decoration:none}
+details.faq{border-bottom:1px solid var(--line)}
+details.faq:first-of-type{border-top:1px solid var(--line)}
+details.faq summary{cursor:pointer;list-style:none;padding:20px 0;font-family:var(--display);font-weight:var(--h-weight);font-size:22px;display:flex;justify-content:space-between;gap:16px;text-transform:var(--h-case);letter-spacing:var(--h-track)}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{content:"+";color:var(--accent-text);font-family:var(--body);font-weight:400}
+details.faq[open] summary::after{content:"–"}
+details.faq p{padding:0 0 20px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:28px 0;font-size:13.5px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--bg);border-top:1px solid var(--line);padding:10px 14px;display:grid;grid-template-columns:1.4fr 1fr;gap:10px}
+.bar .btn{padding:14px 10px;font-size:13px}
+@media (min-width:860px){.bar{display:none}}
+.social{margin-top:16px;font-size:15px;display:flex;flex-wrap:wrap;gap:8px 18px}
+.divider{height:var(--div-h);background:var(--div-bg);border:var(--div-border)}
+.quote{font-family:var(--body);font-size:17px}.vinyl{position:absolute;right:-6%;top:-9%;width:62%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#FBF6EC 0 3%,#D62828 3.5% 19%,#141414 19.5% 21%,transparent 21.5%),repeating-radial-gradient(circle,#141414 0 3px,#2A2A2A 3px 4px)}.hero-art{padding:9% 6% 0 0}details.faq summary{font-size:20px}</style></head>
+<body><div class="concept">Concept preview: a design proposal for Dohboy&#x27;s Diner, not the diner's official website.</div><header class="top"><div class="wrap"><a class="brand" href="#top">Dohboy's Diner<small>Merritton · St. Catharines</small></a><nav class="main" aria-label="Main"><a href="#menu">Menu</a><a href="#drive-thru">Drive-thru</a><a href="#photos">Photos</a><a href="#visit">Hours &amp; location</a></nav><a class="btn solid hdr-call" href="tel:+19052277911">Call 905-227-7911</a><details class="mnav"><summary>Menu</summary><div class="sheet"><a href="#menu">Menu</a><a href="#drive-thru">Drive-thru</a><a href="#photos">Photos</a><a href="#visit">Hours &amp; location</a></div></details></div></header><main id="top"><section class="hero"><div class="wrap"><div>
+<div class="eyebrow">All-day breakfast · Lunch · Drive-thru</div><h1>Breakfast<br>that <em>rocks.</em></h1><p class="lede">Homestyle breakfast and lunch in a rock and roll diner. Dine in, take out, or roll through the drive-thru.</p>
+<div class="cta"><a class="btn solid" href="tel:+19052277911">Call 905-227-7911</a><a class="btn line" href="https://www.google.com/maps/search/?api=1&query=429+Glendale+Ave+St.+Catharines+ON">Get directions</a></div>
+<div class="meta"><span class="status" data-status><span class="dot"></span><span>Open 7 days from 7:00 AM</span></span><span>429 Glendale Ave, Unit 1</span><span>905-227-7911</span></div>
+</div><div class="hero-art"><div class="vinyl" aria-hidden="true"></div><div class="ph">[Photo of the diner — supplied by owner]</div></div></div></section><div class="divider" aria-hidden="true"></div><div class="facts"><div class="wrap"><div>All-day breakfast</div><div>Drive-thru</div><div>Donuts & pastries</div><div>Diner coffee</div></div></div><section class="blk" id="menu"><div class="wrap"><div class="sec-head"><div class="eyebrow">The setlist</div><h2>On the <em>menu</em></h2><p>A taste of what regulars order. Big plates, fair prices.</p></div><div class="menu"><div><h3>Breakfast</h3><div class="item"><div class="row"><span class="name">2 Eggs N Bacon</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div><div class="item"><div class="row"><span class="name">2 Egg Motley Crue</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div><div class="item"><div class="row"><span class="name">Benny and the Jets</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div><p class="desc">Eggs benny with peameal bacon</p></div><div class="item"><div class="row"><span class="name">Walk of Shame</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div><p class="desc">Eggs, bacon, sausage, home fries and toast</p></div><div class="item"><div class="row"><span class="name">Breakfast Poutine</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div><div class="item"><div class="row"><span class="name">Western Omelette</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div><div class="item"><div class="row"><span class="name">Breaky Tray</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div></div><div><h3>Lunch</h3><div class="item"><div class="row"><span class="name">Burger</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div><div class="item"><div class="row"><span class="name">Philly Cheesesteak</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div><div class="item"><div class="row"><span class="name">Pulled Pork Sandwich</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div><div class="item"><div class="row"><span class="name">Fried Bologna Sammie</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div><div class="item"><div class="row"><span class="name">Poutine</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div><p class="desc">Fresh-cut side poutine with gravy</p></div></div><div><h3>Bakery &amp; coffee</h3><div class="item"><div class="row"><span class="name">Donuts</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div><p class="desc">Ask what is fresh today</p></div><div class="item"><div class="row"><span class="name">Pastries</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div><div class="item"><div class="row"><span class="name">Bakery-style rye toast</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div><div class="item"><div class="row"><span class="name">Breakfast sandwiches</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div><div class="item"><div class="row"><span class="name">Diner coffee</span><span class="lead" aria-hidden="true"></span><span class="price">[PRICE]</span></div></div></div></div><p class="note">Sample menu. Full menu and prices to be confirmed by the owner.</p></div></section><section class="band" id="drive-thru"><div class="wrap"><div><div class="eyebrow">Drive-thru</div><h2>In a hurry?<br><em>Roll through.</em></h2><p>The drive-thru window runs a shorter menu so the line keeps moving. Coffee, breakfast sandwiches and donuts, handed over fast.</p><a class="btn solid" href="#visit">Hours & directions</a></div><ul><li>Diner coffee to go</li><li>Breakfast sandwiches</li><li>Donuts & pastries</li><li>Parking in front and beside the building</li></ul></div></section><div class="divider" aria-hidden="true"></div><section class="blk alt" id="good-to-know"><div class="wrap"><div class="sec-head"><div class="eyebrow">Good to know</div><h2>Before you <em>roll in</em></h2></div><div class="cards c4"><div class="card"><h3>Early bird special</h3><p>[Details and times — owner to confirm]</p></div><div class="card"><h3>Gift certificates</h3><p>Dohboy&#x27;s gift certificates are available at the diner. A good present for a breakfast regular.</p></div><div class="card"><h3>Bring the kids</h3><p>Families are welcome, and the plates are big enough to share.</p></div><div class="card"><h3>Easy parking</h3><p>Free parking in front of and beside the building.</p></div></div></div></section><section class="blk" id="photos"><div class="wrap"><div class="sec-head"><div class="eyebrow">Inside</div><h2>Red booths, <em>records</em> on the wall</h2><p>Red booths, a checkerboard floor, swing doors and vinyl on the walls.</p></div><div class="gallery"><div class="ph">[Photo — supplied by owner]</div><div class="ph">[Photo — supplied by owner]</div><div class="ph">[Photo — supplied by owner]</div><div class="ph">[Photo — supplied by owner]</div><div class="ph">[Photo — supplied by owner]</div><div class="ph">[Photo — supplied by owner]</div></div></div></section><section class="blk alt" id="reviews"><div class="wrap"><div class="sec-head"><div class="eyebrow">Word of mouth</div><h2>What people <em>say</em></h2></div><div class="rating"><b>4.7</b><span>★ on Google · 431 reviews</span></div><div class="cards c3"><div class="card"><p class="quote">[Customer review — pulled from the diner's real Google reviews]</p><div class="by">Google review</div></div><div class="card"><p class="quote">[Customer review — pulled from the diner's real Google reviews]</p><div class="by">Google review</div></div><div class="card"><p class="quote">[Customer review — pulled from the diner's real Google reviews]</p><div class="by">Google review</div></div></div></div></section><section class="blk " id="visit"><div class="wrap"><div class="sec-head"><div class="eyebrow">Visit</div><h2>Hours & <em>location</em></h2></div>
+<div class="visit"><div class="panel"><h3>Hours</h3><p class="status" data-status style="margin-bottom:12px;color:var(--ink)"><span class="dot"></span><span>Open 7 days from 7:00 AM</span></p><table class="hours"><caption style="position:absolute;left:-9999px">Opening hours</caption><tbody><tr data-day="1"><th scope="row">Monday</th><td>7:00 AM – 1:30 PM</td></tr><tr data-day="2"><th scope="row">Tuesday</th><td>7:00 AM – 1:30 PM</td></tr><tr data-day="3"><th scope="row">Wednesday</th><td>7:00 AM – 1:30 PM</td></tr><tr data-day="4"><th scope="row">Thursday</th><td>7:00 AM – 1:30 PM</td></tr><tr data-day="5"><th scope="row">Friday</th><td>7:00 AM – 1:30 PM</td></tr><tr data-day="6"><th scope="row">Saturday</th><td>7:00 AM – 1:30 PM</td></tr><tr data-day="0"><th scope="row">Sunday</th><td>7:00 AM – 1:00 PM</td></tr></tbody></table></div>
+<div class="panel"><h3>Find us</h3><address>429 Glendale Ave, Unit 1<br>St. Catharines, ON L2P 3Y1</address><a class="phone-big" href="tel:+19052277911">905-227-7911</a>
+<div class="cta"><a class="btn solid" href="tel:+19052277911">Call</a><a class="btn line" href="https://www.google.com/maps/search/?api=1&query=429+Glendale+Ave+St.+Catharines+ON">Open in Google Maps</a></div><div class="social"><a href="https://www.facebook.com/DohboysDiner/">Facebook</a><span>dohboysdiner@gmail.com</span></div>
+<div class="ph">[Map embed — added when the site goes live]</div></div></div></div></section></main><footer><div class="wrap"><span>Dohboy&#x27;s Diner · 429 Glendale Ave, Unit 1, St. Catharines</span><span>Concept design by Ryan Atkinson</span></div></footer><div class="bar"><a class="btn solid" href="tel:+19052277911">Call the diner</a><a class="btn line" href="https://www.google.com/maps/search/?api=1&query=429+Glendale+Ave+St.+Catharines+ON">Directions</a></div><script>
+(function(){
+  var H=[[420, 780], [420, 810], [420, 810], [420, 810], [420, 810], [420, 810], [420, 810]],names=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  function fmt(m){var h=Math.floor(m/60),mm=m%60,s=h>=12?'PM':'AM';h=h%12||12;return h+':'+(mm<10?'0':'')+mm+' '+s;}
+  var d,mins;
+  try{
+    var p=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Toronto',weekday:'long',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date()),o={};
+    p.forEach(function(x){o[x.type]=x.value;});
+    d=names.indexOf(o.weekday);mins=(parseInt(o.hour,10)%24)*60+parseInt(o.minute,10);
+  }catch(err){var n=new Date();d=n.getDay();mins=n.getHours()*60+n.getMinutes();}
+  var t=H[d],label,cls;
+  if(t&&mins>=t[0]&&mins<t[1]){label='Open now until '+fmt(t[1]);cls='open';}
+  else if(t&&mins<t[0]){label='Closed now. Opens today at '+fmt(t[0]);cls='closed';}
+  else{var i=1;while(i<8&&!H[(d+i)%7])i++;var nd=(d+i)%7;label='Closed now. Opens '+(i===1?'tomorrow':names[nd])+' at '+fmt(H[nd][0]);cls='closed';}
+  document.querySelectorAll('[data-status]').forEach(function(el){el.querySelector('.dot').className='dot '+cls;el.querySelector('span:last-child').textContent=label;});
+  var row=document.querySelector('tr[data-day="'+d+'"]');if(row)row.className='today';
+  document.querySelectorAll('details.mnav a').forEach(function(a){a.addEventListener('click',function(){a.closest('details').removeAttribute('open');});});
+})();
+</script></body></html>
